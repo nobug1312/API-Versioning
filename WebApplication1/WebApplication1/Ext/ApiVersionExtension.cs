@@ -16,9 +16,9 @@ namespace WebApplication1.Ext
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ApiVersionReader = ApiVersionReader.Combine(
-                    new UrlSegmentApiVersionReader(),
-                      new QueryStringApiVersionReader("api-version"),
-                    new HeaderApiVersionReader("X-Api-Version"));
+                        new UrlSegmentApiVersionReader(),
+                        new QueryStringApiVersionReader("api-version"),
+                        new HeaderApiVersionReader("X-Api-Version"));
             })
                 .AddMvc() // This is needed for controllers
                 .AddApiExplorer(options =>

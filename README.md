@@ -14,9 +14,9 @@
 
 - Different Types of API Versioning
 
-    URL versioning: https://localhost:5001/api/v1/workouts
-    Header versioning: https://localhost:5001/api/workouts -H 'X-Api-Version: 1'
-    Query parameter versioning: https://localhost:5001/api/workouts?api-version=1
+    URL versioning: https://localhost:7159/api/v1/workouts
+    Header versioning: https://localhost:7159/api/workouts -H 'X-Api-Version: 1'
+    Query parameter versioning: https://localhost:7159/api/workouts?api-version=1
 
 - Desperate a api version will make it cant be used, use new version instead will return the value of version 1
 
@@ -25,3 +25,5 @@
     NewApiVersionSet - Creates a new ApiVersionSetBuilder that you can use to configure the ApiVersionSet.
     HasApiVersion - Indicates that the ApiVersionSet supports the specified ApiVersion.
     ReportApiVersions- Indicates that all APIs in the ApiVersionSet will report their versions.
+
+    https://dev.to/ayush_k_mandal/api-versioning-in-minimal-api-1omi
